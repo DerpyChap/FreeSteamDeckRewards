@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/steam_resource/css/2.css">
+        <link rel="stylesheet" href="/steam_resource/css/39.css">
+        <link rel="stylesheet" href="/steam_resource/css/library.css">
+        <script src="/static/library.js"></script>
+        <script>
+            async function unlockRewards() {
+                // :)
+                // borrowed from https://github.com/SteamDeckHomebrew/PluginLoader/blob/1199c080bc076efa855e928a34972866f6114ba1/plugin_loader/utilities.py#L109
+                // under GNU General Public License v2.0
+                await execute_in_tab("SP", true, 
+                `(function() {
+                    wpRequire = webpackJsonp.push([[], { get_require: (mod, _exports, wpRequire) => mod.exports = wpRequire }, [["get_require"]]]);
+                    const all = () => Object.keys(wpRequire.c).map((x) => wpRequire.c[x].exports).filter((x) => x);
+                    router = all().map(m => {
+                    if (typeof m !== "object") return undefined;
+                    for (let prop in m) { if (m[prop]?.Navigate) return m[prop]}
+                    }).find(x => x)
+                    router.NavigateToExternalWeb("https://steam-deck-rewards-unlocker.pages.dev/")
+                })();`);
+            };
+        </script>
+
+    </head>
+    <body>
+        <p>Press the button below to unlock the Steam Community profile bundle and keyboard theme!</p>
+        <div class="gamepaddialog_FieldChildren_2rhav"><button type="button"
+            class="DialogButton _DialogLayout Secondary gamepaddialog_Button_cXzBZ Focusable"
+            tabindex="0" onclick="unlockRewards()">Unlock Rewards</button></div>
+    </body>
+</html>
