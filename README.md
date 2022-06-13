@@ -1,1 +1,4 @@
 # FreeSteamDeckRewards
+A [PluginLoader](https://github.com/SteamDeckHomebrew/PluginLoader) plugin that llows you to "unlock" the 512GB exclusive on-screen keyboard theme and profile rewards on any Steam Deck.
+
+Code used to launch the browser is from [SteamDeckHomebrew's PluginLoader](https://github.com/SteamDeckHomebrew/PluginLoader/blob/1199c080bc076efa855e928a34972866f6114ba1/plugin_loader/utilities.py#L109)
