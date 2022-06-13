@@ -3,7 +3,7 @@
     "author": "DerpyChap",
     "main_view_html": "main_view.html",
     "tile_view_html": "",
-    "flags": ["_hot_reload", "_root"],
+    "flags": [],
     "publish": {
         "discord_id": "110786015102287872",
         "description": "Allows you to \"unlock\" the 512GB exclusive keyboard theme and profile bundle.",
