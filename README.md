@@ -3,7 +3,7 @@
 
 https://user-images.githubusercontent.com/15108194/173328682-cedd4bf2-af43-41d5-9345-e714082c6ace.mp4
 
-<sup>(Unmute the viedo for the best experience)</sup>
+<sup>(Unmute the video for the best experience)</sup>
 
 A [PluginLoader](https://github.com/SteamDeckHomebrew/PluginLoader) plugin that allows you to "unlock" the 512GB exclusive on-screen keyboard theme and profile rewards on any Steam Deck.
 
